@@ -1,8 +1,26 @@
-# Welcome to your CDK TypeScript project
+# Summarize API CDK Bedrock
 
-This is a blank project for CDK development with TypeScript.
+This Typescript CDK project creates an API gateway and Lambda to summarize an input text using Amazon Bedrock.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+The Amazon Titan Text Lite model must be enabled on the target account.
+
+![Summarize API Design](/summarize-api-design.png)
+
+**Request**
+```
+{
+    "inputText": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is
+    attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a
+    type specimen book. It usually begins with"
+}
+```
+
+**Response**
+```
+{
+    "summary": "\nLorem ipsum is dummy text used in print, graphic, and web design. It is attributed to an unknown typesetter in the 15th century."
+}
+```
 
 ## Useful commands
 
