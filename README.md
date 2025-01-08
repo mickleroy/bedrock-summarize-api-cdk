@@ -1,4 +1,4 @@
-# Summarize API CDK Bedrock
+# Summarize API CDK Bedrock!
 
 This Typescript CDK project creates an API gateway and Lambda to summarize an input text using Amazon Bedrock.
 
